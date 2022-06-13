@@ -17,3 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//api routes require prefix of /api
+//php doesn't use {}, use [] instead for everything (creepy)
+
+// Route::get('/posts', function () {
+//     return response()->json([
+//         'posts' => [
+//             [
+//                 'title' => 'Title One'
+//             ],
+//             [
+//                 'title' => 'Title Two'
+//             ]
+//         ]
+//     ]);
+// });
